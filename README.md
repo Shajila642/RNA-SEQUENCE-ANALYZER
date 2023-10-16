@@ -5,7 +5,7 @@ def count_bases(rna_sequence):
     
     for base in rna_sequence:
         if base in base_count:
-            base_count[base] += 1
+            base_count[base] +=1
     
     return base_count
 
