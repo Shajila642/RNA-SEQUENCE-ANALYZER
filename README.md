@@ -8,12 +8,14 @@ def count_bases(rna_sequence):
             base_count[base] += 1
     
     return base_count
+    
 
 def gc_content(rna_sequence):
     gc_count = rna_sequence.count('G') + rna_sequence.count('C')
     total_bases = len(rna_sequence)
     gc_percentage = (gc_count / total_bases) * 100
     return gc_percentage
+    
 
 if __name__ == "__main__":
     sequence = input("Enter an RNA sequence: ").upper()
